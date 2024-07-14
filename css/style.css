@@ -1,0 +1,60 @@
+body{
+  max-height: 100vh;
+  min-width: 1250px;
+}
+a{
+  text-decoration: none;
+}
+main{
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: stretch;
+  gap: 10px;
+  font-size: 0.8rem;
+}
+
+/* 
+  *MARK: UTILITIES
+*/
+.pointer{
+  cursor: pointer;
+}
+.w-35{
+  width: 35%;
+}
+.w-0{
+  width: 0px;
+}
+.w-65{
+  width: 65%;
+}
+
+
+/* 
+  * MARK: DETAILS-SECTION
+*/
+.close_svg{
+  fill: #000000;
+  stroke: #000000;
+  opacity: 50%;
+  transition: all 0.2s linear;
+}
+.close_svg:hover{
+  opacity: 100%;
+}
+.details_section{
+  position: relative;
+  transition: all 0.3s ease-in-out;
+}
+.close_details{
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+/* 
+  *MARK:DATA-SECTION
+*/

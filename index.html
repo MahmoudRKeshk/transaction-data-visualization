@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/dataTables.dataTables.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Transactions Visualization</title>
+</head>
+<body>
+  <!-- <header class="w-100 text-center text-bg-success p-1 sticky-top">
+    <h1 class="fw-bold ">2023 Final payroll</h1>
+  </header> -->
+  <main class="w-100 p-2">
+    <!-- the table left section -->
+    <section class="data_section w-65" id="data_section">
+      <div class="form-floating mb-3">
+        <input type="text" class="form-control" id="floatingInput" data-search="name_search_column" placeholder="client name">
+        <label for="floatingInput">client name</label>
+      </div>
+      <table class="table table-striped d-none" id="transactions_table">
+        <thead >
+          <th class="text-center">Transaction Date</th>
+          <th class="text-center">Client ID</th>
+          <th class="text-center">Client Name</th>
+          <th class="text-center">Amount</th>
+          <th class="text-center">Left Balance</th>
+        </thead>
+        <tbody id="transactions_table_body">
+  
+        </tbody>
+      </table>
+    </section>
+
+    <!-- the chart canvas section -->
+    <section class="details_section w-35 d-none" id="details_section">
+      <div class="close_details" id="close_details">
+        <svg class="close_svg" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M19.207 6.207a1 1 0 0 0-1.414-1.414L12 10.586 6.207 4.793a1 1 0 0 0-1.414 1.414L10.586 12l-5.793 5.793a1 1 0 1 0 1.414 1.414L12 13.414l5.793 5.793a1 1 0 0 0 1.414-1.414L13.414 12l5.793-5.793z" /></svg>
+      </div>
+      <h2 class="fw-bold text-dark mt-1 mb-2 details_header">Client details</h2>
+      <p><span class="badge text-bg-primary me-2">name</span><span class="text-black-50" id="client_name"></span></p>
+      <canvas id="balance">
+
+      </canvas>
+      <br>
+      <canvas id="amount">
+
+      </canvas>
+
+    </section>
+  </main>
+
+  <script src="./js/jquery-3.7.1.min.js"></script>
+  <script src="./js/dataTables.min.js"></script>
+  <script src="./js/bootstrap.bundle.min.js"></script>
+  <script src="./js/chart.umd.js"></script>
+  <script type="module" src="./js/script.js"></script>
+</body>
+</html>
